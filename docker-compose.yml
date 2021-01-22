@@ -35,6 +35,7 @@ services:
                 # custom pip libraries
         volumes:
             - ./repositories:/home/odoo/custom/repositories:rw,z
+            - ./addons:/home/odoo:rw,z
             - filestore:/home/odoo/data
             # Timezone from host
             - /etc/timezone:/etc/timezone:ro
